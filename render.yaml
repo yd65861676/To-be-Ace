@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: digital-art-marketplace
+    env: python
+    buildCommand: ./build.sh
+    startCommand: ./run.sh
+    envVars:
+      - key: FLASK_APP
+        value: src.main
+      - key: FLASK_ENV
+        value: production
+      - key: SECRET_KEY
+        generateValue: true
+    plan: free
