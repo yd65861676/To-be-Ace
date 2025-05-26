@@ -11,4 +11,3 @@ services:
         value: production
       - key: SECRET_KEY
         generateValue: true
-    plan: free
